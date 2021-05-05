@@ -1,0 +1,15 @@
+[GLOBAL]
+pants_version = "2.4.1rc1"
+pantsd = true
+
+backend_packages.add = [
+  "pants.backend.python",
+]
+
+[source]
+root_patterns = ["/"]
+
+[python-setup]
+interpreter_constraints = [">=3.8"]
+requirement_constraints = "constraints.txt"
+interpreter_search_paths = ["<PATH>", "<PYENV>"]
