@@ -4,10 +4,16 @@ pipelines:
   default:
     - parallel:
       - step:
-          name: Bootstap Pants
+          name: Bootstrap Pants
+          caches: [pants]
           script:
             - ./pants version
       - step:
           name: Lint code
+          caches: [pants]
           script:
             - "./pants lint ::"
+
+definitions:
+  caches:
+    pants: ~/.cache/pants
