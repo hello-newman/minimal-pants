@@ -1,0 +1,13 @@
+image: python:3.8
+
+pipelines:
+  default:
+    - parallel:
+      - step:
+          name: Bootstap Pants
+          script:
+            - ./pants version
+      - step:
+          name: Lint code
+          script:
+            - "./pants lint ::"
