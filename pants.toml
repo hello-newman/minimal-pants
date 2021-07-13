@@ -6,6 +6,10 @@ backend_packages.add = [
   "pants.backend.python",
 ]
 
+plugins = [
+  "toolchain.pants.plugin==0.13.1",
+]
+
 [source]
 root_patterns = ["/"]
 
@@ -16,3 +20,10 @@ interpreter_search_paths = ["<PATH>", "<PYENV>"]
 
 [anonymous-telemetry]
 enabled = false
+
+
+[toolchain-setup]
+repo = "minimal-pants"
+
+[buildsense]
+enable = false
