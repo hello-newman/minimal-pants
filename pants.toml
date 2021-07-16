@@ -1,14 +1,18 @@
 [GLOBAL]
 pants_version = "2.6.0rc2"
 pantsd = false
+level = "debug"
 
 backend_packages.add = [
   "pants.backend.python",
 ]
 
 plugins = [
-  "toolchain.pants.plugin==0.13.1",
+  "toolchain.pants.plugin==0.14.0.dev1",
 ]
+
+[python-repos]
+indexes.add = ["https://test.pypi.org/simple/"]
 
 [source]
 root_patterns = ["/"]

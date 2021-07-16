@@ -1,11 +1,6 @@
-
-[pytest]
-args = ["--no-header", "-vv"]
-junit_xml_dir = "dist/test-results/"
-
-[coverage-py]
-report = ["raw", "xml"]
-
 [auth]
 from_env_var = "TOOLCHAIN_AUTH_TOKEN"
-org = "festivus-miracle"
+# org = "festivus-miracle"
+
+[buildsense]
+enable = true

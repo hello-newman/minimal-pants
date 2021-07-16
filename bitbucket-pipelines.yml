@@ -1,18 +1,13 @@
 image: python:3.8
-
 pipelines:
   default:
-    - parallel:
-      - step:
-          name: Bootstrap Pants
-          caches: [pants]
-          script:
-            - ./pants version
       - step:
           name: Lint code
           caches: [pants]
           script:
-            - "./pants lint ::"
+            - env | grep BITBUCKET
+            - PANTS_CONFIG_FILES=pants.ci.toml ./pants version
+            - "PANTS_CONFIG_FILES=pants.ci.toml  ./pants lint ::"
 
 definitions:
   caches:
