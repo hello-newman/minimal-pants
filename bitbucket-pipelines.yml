@@ -1,14 +1,21 @@
 image: python:3.8
 pipelines:
-  default:
+  pull-requests:
+    '**':
       - step:
-          name: Lint code
+          name: Lint code (PR)
           caches: [pants]
           script:
             - env | grep BITBUCKET
             - PANTS_CONFIG_FILES=pants.ci.toml ./pants version
-            - "PANTS_CONFIG_FILES=pants.ci.toml  ./pants lint ::"
-
+            - "PANTS_CONFIG_FILES=pants.ci.toml ./pants lint ::"
+  branches: 
+    main:
+      - step:
+          name: Lint code (Branch)
+          caches: [pants]
+          script:
+            - "PANTS_CONFIG_FILES=pants.ci.toml ./pants lint ::"
 definitions:
   caches:
     pants: ~/.cache/pants
