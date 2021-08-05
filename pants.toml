@@ -4,6 +4,7 @@ pantsd = false
 # level = "debug"
 
 backend_packages.add = [
+  "pants.backend.project_info",
   "pants.backend.python",
   "pants.backend.python.lint.black",
   "pants.backend.python.lint.flake8",
