@@ -1,6 +1,5 @@
 from colors import blue
 
-
 from seinfeld.quote_of_the_day import Quotes
 
 
