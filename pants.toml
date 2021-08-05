@@ -1,5 +1,5 @@
 [GLOBAL]
-pants_version = "2.6.0rc2"
+pants_version = "2.6.0"
 pantsd = false
 # level = "debug"
 
