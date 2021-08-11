@@ -29,6 +29,8 @@ interpreter_search_paths = ["<PATH>", "<PYENV>"]
 [anonymous-telemetry]
 enabled = false
 
+[black]
+version = "black==21.7b0"
 
 [toolchain-setup]
 repo = "minimal-pants"
