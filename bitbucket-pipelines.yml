@@ -16,6 +16,13 @@ pipelines:
           caches: [pants]
           script:
             - "PANTS_CONFIG_FILES=pants.ci.toml ./pants lint ::"
+  tags: 
+    '**':
+      - step:
+          name: Lint code (Tag)
+          caches: [pants]
+          script:
+            - "PANTS_CONFIG_FILES=pants.ci.toml ./pants lint ::"
 definitions:
   caches:
     pants: ~/.cache/pants
