@@ -16,6 +16,3 @@ line_length = 120
 # supposed to be the default value. Without this, iSort misclassifies our imports.
 known_first_party = ["toolchain"]
 default_section = "THIRDPARTY"
-
-# TODO(#3030): get isort to work with skips.
-skip_glob = ["src/python/kythe/proto/*.py"]
