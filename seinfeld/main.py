@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from colors import blue
 
 from seinfeld.quote_of_the_day import Quotes
