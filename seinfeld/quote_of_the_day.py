@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import random
 
-
 _QUOTES = [
     "What do you need it for after you read it",
     "How come people don’t have dip for dinner",
@@ -17,7 +16,6 @@ _QUOTES = [
     "Three squares? You can’t spare three squares?",
     "He stopped short? ",
 ]
-
 
 
 class Quotes:

@@ -1,0 +1,5 @@
+env:
+  PANTS_CONFIG_FILES: "['pants.toml', 'pants.ci.toml']"
+steps: 
+  - command: "./pants lint ::"
+    label: "Pants Lint"

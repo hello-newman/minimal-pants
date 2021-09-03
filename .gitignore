@@ -48,3 +48,10 @@ Thumbs.db
 *.mov
 *.wmv
 
+# Pants output and workdirs
+.pants.d
+.docker.pants.d
+dist
+dist.docker
+.pids
+.pants.workdir.file_lock*
