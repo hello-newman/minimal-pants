@@ -1,5 +1,5 @@
 env:
   PANTS_CONFIG_FILES: "['pants.toml', 'pants.ci.toml']"
 steps: 
-  - command: "python --version && python3 --version && ./pants lint ::"
+  - command: "./pants lint ::"
     label: "Pants Lint"
