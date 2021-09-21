@@ -1,6 +1,6 @@
 [GLOBAL]
 pants_version = "2.7.0rc4"
-pantsd = false
+pantsd = true
 # level = "debug"
 
 backend_packages.add = [
@@ -24,7 +24,7 @@ root_patterns = ["/"]
 
 [python-setup]
 interpreter_constraints = [">=3.8"]
-requirement_constraints = "constraints.txt"
+requirement_constraints = "3rdparty/constraints.txt"
 interpreter_search_paths = ["<PATH>", "<PYENV>"]
 
 [anonymous-telemetry]
@@ -32,12 +32,16 @@ enabled = false
 
 [black]
 version = "black==21.8b0"
+lockfile = "3rdparty/lockfile.black.txt"
 
 [isort]
 version = "isort[pyproject]==5.9.3"
+interpreter_constraints = ["CPython>=3.8,<3.10"]
+lockfile = "3rdparty/lockfile.isort.txt"
 
 [flake8]
 version = "flake8==3.9.2"
+lockfile = "3rdparty/lockfile.flake8.txt"
 extra_requirements.add = [
   "flake8-debugger",
   "flake8-2020",
