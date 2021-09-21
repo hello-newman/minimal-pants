@@ -1,7 +1,7 @@
 [GLOBAL]
 pants_version = "2.7.0rc4"
 pantsd = false
-# level = "debug"
+level = "debug"
 
 backend_packages.add = [
   "pants.backend.project_info",
