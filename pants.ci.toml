@@ -1,5 +1,5 @@
 [auth]
-from_env_var = "TOOLCHAIN_AUTH_TOKEN"
+from_env_var = "GITHUB_TOOLCHAIN_AUTH_TOKEN"
 
 [buildsense]
 enable = true

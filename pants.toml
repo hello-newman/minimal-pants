@@ -1,5 +1,5 @@
 [GLOBAL]
-pants_version = "2.6.1rc2"
+pants_version = "2.7.0rc4"
 pantsd = false
 # level = "debug"
 
@@ -9,14 +9,15 @@ backend_packages.add = [
   "pants.backend.python.lint.black",
   "pants.backend.python.lint.flake8",
   "pants.backend.python.lint.isort",
+  "pants.backend.experimental.python",
 ]
 
 plugins = [
-  "toolchain.pants.plugin==0.14.0.dev2",
+  "toolchain.pants.plugin==0.14.0",
 ]
 
-[python-repos]
-indexes.add = ["https://test.pypi.org/simple/"]
+# [python-repos]
+# indexes.add = ["https://test.pypi.org/simple/"]
 
 [source]
 root_patterns = ["/"]
@@ -30,7 +31,7 @@ interpreter_search_paths = ["<PATH>", "<PYENV>"]
 enabled = false
 
 [black]
-version = "black==21.7b0"
+version = "black==21.8b0"
 
 [isort]
 version = "isort[pyproject]==5.9.3"
