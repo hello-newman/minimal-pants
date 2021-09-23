@@ -28,7 +28,7 @@ interpreter_search_paths = ["<PATH>", "<PYENV>"]
 enabled = false
 
 [black]
-version = "black==21.8b0"
+version = "black==21.9b0"
 lockfile = "3rdparty/lockfile.black.txt"
 
 [isort]
