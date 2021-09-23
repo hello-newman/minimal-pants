@@ -51,7 +51,4 @@ extra_requirements.add = [
 
 [toolchain-setup]
 repo = "minimal-pants"
-
-
-[buildsense]
-enable = false
+base_url = "https://staging.app.toolchain.com"
