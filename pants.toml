@@ -1,5 +1,5 @@
 [GLOBAL]
-pants_version = "2.7.0rc4"
+pants_version = "2.7.0rc5"
 pantsd = true
 # level = "debug"
 
@@ -16,9 +16,6 @@ plugins = [
   "toolchain.pants.plugin==0.14.0",
 ]
 
-# [python-repos]
-# indexes.add = ["https://test.pypi.org/simple/"]
-
 [source]
 root_patterns = ["/"]
 
@@ -31,7 +28,7 @@ interpreter_search_paths = ["<PATH>", "<PYENV>"]
 enabled = false
 
 [black]
-version = "black==21.8b0"
+version = "black==21.9b0"
 lockfile = "3rdparty/lockfile.black.txt"
 
 [isort]
@@ -54,7 +51,3 @@ extra_requirements.add = [
 
 [toolchain-setup]
 repo = "minimal-pants"
-
-
-[buildsense]
-enable = false
