@@ -51,3 +51,4 @@ extra_requirements.add = [
 
 [toolchain-setup]
 repo = "minimal-pants"
+base_url = "https://staging.app.toolchain.com"
